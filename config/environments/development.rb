@@ -1,4 +1,8 @@
 FullCachingExample::Application.configure do
+
+  redis_uri = "redis://127.0.0.1:6379"
+  config.cache_store = :redis_store, "#{redis_uri}/1"
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   redis_uri = "redis://127.0.0.1:6379"
