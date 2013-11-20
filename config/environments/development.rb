@@ -4,9 +4,6 @@ FullCachingExample::Application.configure do
   config.cache_store = :redis_store, "#{redis_uri}/1"
 
   # Settings specified here will take precedence over those in config/application.rb.
-
-  redis_uri = "redis://127.0.0.1:6379"
-  config.cache_store = :redis_store, "#{redis_uri}/1"
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
